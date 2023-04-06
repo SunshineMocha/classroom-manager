@@ -1,14 +1,16 @@
-class Classroom{
-    constructor(students = []){
+`use strict`
+
+class Classroom {
+    constructor(students = []) {
         this.students = students;
     }
-    addStudent(student){
+    addStudent(student) {
+        this.students.push(student);
+    }
+    removeStudent(student) {
 
     }
-    removeStudent(student){
-
-    }
-    shuffleStudents(){
+    shuffleStudents() {
 
     }
 }
