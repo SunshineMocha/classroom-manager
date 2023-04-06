@@ -20,18 +20,32 @@ function displayClassroom(array) {
 
         newli.appendChild(text); // Appendo il testo al <li>
         mainUL.appendChild(newli); // Appendo il <li> alla lista
+        
     }
 }
 
 displayClassroom(classroom1.students);
+shuffleTheClassroom(classroom1)
 
 function shuffleTheClassroom() {
-
+    classroom1.shuffleStudents();
+    displayClassroom(classroom1.students);
 }
 
 function addStudentToClassroom() {
     const input1 = document.getElementById(`student-name`);
     const input2 = document.getElementById(`student-surname`);
-
-    classroom1.addStudent();
+    if(input1.value !== `` && input2.value !== ``) // Se casella di testa vuota, non aggiungere nulla!
+    {
+        const newStudentName = input1.value; // creo una stringa qualsiasi da aggiungere al mio array 
+        const newStudentSurname = input2.value; // creo una stringa qualsiasi da aggiungere al mio array 
+        // questo mi da solo una cosa che voglio io, non l'utente, aggiungo input per testo
+        const aNewStudent = new Student(input1.value, input2.value);
+        classroom1.addStudent(aNewStudent); // pusho la stringa
+        displayClassroom(classroom1.students); // rimostro la lista, ma questo vuol dire che mi stampa tutti gli elementi compresi quelli precedenti, 
+        // mi serve svuotare la lista prima! Aggiungo linea 40
+        input1.value = ``;
+        input2.value = ``;
+    }
 } 
+
