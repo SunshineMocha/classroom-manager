@@ -1,11 +1,61 @@
-body{
-    background-color:lightskyblue;
+ul {
+    columns: 4;
+}
+footer p{
+   /* display: flex;
+    justify-items: center;*/
+    display: flex;
+    flex-direction: column;
 }
 
-ul {
-    columns: 2;
+body {
+    width: 90vw;
+    height: 90vh;
+    background-color: black;
+    color: blue;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
 }
 
 .bday {
     background: yellow;
+}
+
+.birthDate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#student-yoB{
+    width: 5%;
+}
+#student-moB{
+    width: 5%;
+}
+#student-doB{
+    width: 5%;
+}
+#addStudentButton{
+    width: 10%;
+}
+#addStudentButton{
+    width: 10%;
+}
+.addNew{
+    display: flex;
+    justify-content: left;
 }

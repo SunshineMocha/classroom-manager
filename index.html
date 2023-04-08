@@ -8,31 +8,41 @@
     <title>Classroom Manager</title>
 </head>
 <body>
-    <h1>Classroom Manager</h1>
-    <ul id="student-list">
-
-    </ul>
-    <button onclick="shuffleTheClassroom()">Shuffle Time!</button>
-    <div>
-        <h3>Add a new student:</h3>
-        <div>
-            <span>Name</span>
-            <input type="text" id="student-name">
+    <header>
+        <h1>Classroom Manager</h1>
+    </header>
+    <main>
+        <ul id="student-list">
+        </ul>
+        <button onclick="shuffleTheClassroom()">Shuffle Time!</button>
+        <div class="addNew">
+            <h3>Add a new student:</h3>
+            <div>
+                <span>Name</span>
+                <input type="text" id="student-name">
+            </div>
+            <div>
+                <span>Surname</span>
+                <input type="text" id="student-surname">
+            </div>
+            <div class="empty"></div>
+            <div class="birthDate">
+                <span>Month (mm): </span>
+                <input type="text" id="student-moB">
+                <span>Day (dd): </span>
+                <input type="text" id="student-doB">
+                <span>Year (yyyy): </span>
+                <input type="text" id="student-yoB">
+            </div>
+            <button id="addStudentButton" onclick="addStudentToClassroom()">Add this student!</button>
         </div>
-        <div>
-            <span>Surname</span>
-            <input type="text" id="student-surname">
-        </div>
-        <div>
-            <span>Month (mm): </span>
-            <input type="text" id="student-moB">
-            <span>Day (dd): </span>
-            <input type="text" id="student-doB">
-            <span>Year (yyyy): </span>
-            <input type="text" id="student-yoB">
-        </div>
-        <button id="addStudentButton" onclick="addStudentToClassroom()">Add this student!</button>
-    </div>
+    </main>
+    
+    <footer>
+        <p>This program was written in order to create a Classroom Manager</p>
+        <br>
+        <p>Code written by SunshineMocha & Simone Maccarone</p>
+    </footer>
 </body>
 <script src="./student.js"></script>
 <script src="./classroom.js"></script>
