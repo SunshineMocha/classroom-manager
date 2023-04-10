@@ -1,33 +1,35 @@
 ul {
     columns: 4;
 }
-footer p{
-   /* display: flex;
+
+footer p {
+    /* display: flex;
     justify-items: center;*/
-    display: flex;
-    flex-direction: column;
+    /*display: flex;
+    flex-direction: column;*/
 }
 
 body {
     width: 90vw;
     height: 90vh;
-    background-color: black;
-    color: blue;
-    display: flex;
-    flex-direction: column;
+    /* background-color: black;*/
+    /* color: blue; */
+    /*display: flex;
+    flex-direction: column;*/
 }
 
 header {
-    display: flex;
-    justify-content: center;
+    /*display: flex;
+    justify-content: center;*/
 }
 
 main {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column;*/
 }
 
 footer {
+    /*justify-self: center;*/
 }
 
 .bday {
@@ -40,22 +42,27 @@ footer {
     justify-content: center;
 }
 
-#student-yoB{
+#student-yoB {
     width: 5%;
 }
-#student-moB{
+
+#student-moB {
     width: 5%;
 }
-#student-doB{
+
+#student-doB {
     width: 5%;
 }
-#addStudentButton{
+
+#addStudentButton {
     width: 10%;
 }
-#addStudentButton{
+
+#addStudentButton {
     width: 10%;
 }
-.addNew{
-    display: flex;
-    justify-content: left;
+
+.addNew {
+    /*display: flex;
+    flex-direction: column;*/
 }
