@@ -21,6 +21,7 @@ class Classroom {
     //     this.students.splice(studentIndex, 1);// splice mi rimuove l'elemento che dico dall'array, UN elemento
     //     displayClassroom(classroom1.students);
     // }
+    
     // CORREZIONE
     shuffleStudents(){
         const tempArray = [];

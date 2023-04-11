@@ -62,7 +62,10 @@ function displayClassroom2(classroom){
 
     for (let i = 0; i < classroom.students.length; i++) {
         const student = classroom.students[i];
-        studentList.innerHTML += `<li class="list-element">${student.name} ${student.surname}<button> Rimuovi </button></li>`;
+        studentList.innerHTML += `<li class="list-element">${student.name} ${student.surname}</li>`;
+        studentList.innerHTML += `<button class="remove-btn" onclick="removeStudentFromClassroom(${student})">
+        <img class="remove-img" src = "./assets/4x-1.gif"></img>
+        </button>`;
     }
 }
 
@@ -124,7 +127,7 @@ function displayClassroom2(classroom){
 // CORREZIONE
 function shuffleTheClassroom() {
     classroom1.shuffleStudents();
-    displayClassroom(classroom1);
+    displayClassroom2(classroom1);
 }
 
 // FATTO IN CASA
@@ -144,7 +147,7 @@ function addStudentToClassroom() {
     if (name !== `` && surname !== ``){   
         const newStudent = new Student (name,surname);
         classroom1.addStudent(newStudent);
-        displayClassroom(classroom1);
+        displayClassroom2(classroom1);
     }    
 }
 
@@ -183,7 +186,7 @@ function addStudentToClassroom() {
 
 function removeStudentFromClassroom(student){
     classroom1.removeStudent(student);
-    displayClassroom(classroom1);
+    displayClassroom2(classroom1);
 }
 
 function colorMainTitle(){
