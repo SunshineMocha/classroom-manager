@@ -63,7 +63,7 @@ function displayClassroom2(classroom){
     for (let i = 0; i < classroom.students.length; i++) {
         const student = classroom.students[i];
         studentList.innerHTML += `<li class="list-element">${student.name} ${student.surname}</li>`;
-        studentList.innerHTML += `<button class="remove-btn" onclick="removeStudentFromClassroom(${student})">
+        studentList.innerHTML += `<button class="remove-btn" onclick="removeStudentFromClassroom(${student.name})">
         <img class="remove-img" src = "./assets/4x-1.gif"></img>
         </button>`;
     }
