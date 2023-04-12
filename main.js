@@ -69,6 +69,7 @@ function displayClassroom2(classroom){
         /*studentList.innerHTML += `<button class="remove-btn" id="remove-btn${i}"> 
         <img class="remove-img" src = "./assets/4x-1.gif"></img>
         </button>`;*/
+        
         // come risolvo questo problema che non riesco a passare il valore perche HTML statico e non dinamico?
         //document.getElementById("remove-btn" + i).addEventListener('click', (element) => removeStudentFromClassroom(student)); <- soluzione
         // remove-btn0, remove-btn1 (crea con indice per creare diversi id)
