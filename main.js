@@ -62,10 +62,13 @@ function displayClassroom2(classroom){
 
     for (let i = 0; i < classroom.students.length; i++) {
         const student = classroom.students[i];
-        studentList.innerHTML += `<li class="list-element">${student.name} ${student.surname}</li>`;
-        studentList.innerHTML += `<button class="remove-btn" id="remove-btn${i}"> 
+        studentList.innerHTML += `<li class="list-element">${student.name} ${student.surname} <button class="remove-btn" id="remove-btn${i}"> 
         <img class="remove-img" src = "./assets/4x-1.gif"></img>
-        </button>`;
+        </button></li>`;
+        // Button outside li, junk code
+        /*studentList.innerHTML += `<button class="remove-btn" id="remove-btn${i}"> 
+        <img class="remove-img" src = "./assets/4x-1.gif"></img>
+        </button>`;*/
         // come risolvo questo problema che non riesco a passare il valore perche HTML statico e non dinamico?
         //document.getElementById("remove-btn" + i).addEventListener('click', (element) => removeStudentFromClassroom(student)); <- soluzione
         // remove-btn0, remove-btn1 (crea con indice per creare diversi id)
@@ -157,6 +160,8 @@ function addStudentToClassroom() {
         const newStudent = new Student (name,surname);
         classroom1.addStudent(newStudent);
         displayClassroom2(classroom1);
+        nameInput.value = ``;
+        surnameInput.value = ``;
     }    
 }
 
